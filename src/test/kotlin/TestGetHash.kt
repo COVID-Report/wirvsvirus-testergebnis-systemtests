@@ -23,7 +23,7 @@ class TestGetHash {
             hashCodeIsRequested()
         } Then {
             statusCode(200)
-            body(equalTo(TestConstants.JOHN_DOE_HASHCODE))
+            body(equalTo("\"" + TestConstants.JOHN_DOE_HASHCODE + "\""))
         }
     }
 
